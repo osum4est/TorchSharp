@@ -35,10 +35,8 @@
 //#define NOMINMAX
 
 #ifdef CRC32C_GCC
-#if !defined(__aarch64__)
 #include <cpuid.h>
 #include <x86intrin.h>
-#endif
 #else
 #include <intrin.h>
 #endif
